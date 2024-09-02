@@ -1,8 +1,9 @@
-import { AppShell, Burger, Group, Skeleton } from "@mantine/core";
-import { useDisclosure } from "@mantine/hooks";
-import { MantineLogo } from "@mantinex/mantine-logo";
+"use client";
 
-export default function BasicAppShell({ children }) {
+import { AppShell, Burger, Button, Group, Skeleton } from "@mantine/core";
+import { useDisclosure } from "@mantine/hooks";
+
+export default function BasicAppShell({ children }: { children: any }) {
   const [opened, { toggle }] = useDisclosure();
 
   return (
@@ -14,16 +15,15 @@ export default function BasicAppShell({ children }) {
       <AppShell.Header>
         <Group h="100%" px="md">
           <Burger opened={opened} onClick={toggle} hiddenFrom="sm" size="sm" />
-          <MantineLogo size={30} />
         </Group>
       </AppShell.Header>
       <AppShell.Navbar p="md">
-        Navbar
-        {Array(15)
-          .fill(0)
-          .map((_, index) => (
-            <Skeleton key={index} h={28} mt="sm" animate={false} />
-          ))}
+        Navbar5
+        <Button mt={5}>Hi</Button>
+        <Button mt={5}>Hi</Button>
+        <Button mt={5}>Hi</Button>
+        <Button mt={5}>Hi</Button>
+        <Button mt={5}>Hi</Button>
       </AppShell.Navbar>
       <AppShell.Main>{children}</AppShell.Main>
     </AppShell>
