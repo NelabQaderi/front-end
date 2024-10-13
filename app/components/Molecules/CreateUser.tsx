@@ -80,30 +80,3 @@ const CreateUser: NextComponentType<NextPageContext, {}, Props> = (
 };
 
 export default CreateUser;
-
-// "use client";
-
-// import { TextInput, Group, Button } from "@mantine/core";
-// import { randomId } from "@mantine/hooks";
-// import type { NextComponentType, NextPageContext } from "next";
-
-// interface Props {}
-
-// const CreateUser: NextComponentType<NextPageContext, {}, Props> = (
-//   props: Props
-// ) => {
-//   return (
-//     <div>
-//       <div>
-//         <TextInput label="Name" placeholder="Name" />
-//         <TextInput mt="md" label="Email" placeholder="Email" />
-
-//         <Group justify="center" mt="xl">
-//           <Button onClick={() => {}}>Set random values</Button>
-//         </Group>
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default CreateUser;

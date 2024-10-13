@@ -19,9 +19,15 @@ export default function BasicAppShell({ children }: { children: any }) {
       </AppShell.Header>
       <AppShell.Navbar p="md">
         Navbar5
-        <Button mt={5}>Hi</Button>
-        <Button mt={5}>Hi</Button>
-        <Button mt={5}>Hi</Button>
+        <Button component="a" href="/" mt={5}>
+          Home
+        </Button>
+        <Button component="a" href="/login" mt={5}>
+          Login
+        </Button>
+        <Button component="a" href="/About" mt={5}>
+          About
+        </Button>
         <Button mt={5}>Hi</Button>
         <Button mt={5}>Hi</Button>
       </AppShell.Navbar>
